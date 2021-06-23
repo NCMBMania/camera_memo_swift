@@ -3,23 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8456FAFBCDCDB3C82431C30D /* Pods_camera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4EE3E2F17B81E53C4815E1 /* Pods_camera.framework */; };
+		C74479CA2682F1D200646101 /* UploaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479C92682F1D200646101 /* UploaderView.swift */; };
+		C74479CC2682F20100646101 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479CB2682F20100646101 /* MemoView.swift */; };
+		C74479CE2682F2A100646101 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479CD2682F2A100646101 /* LoginView.swift */; };
+		C74479D226830D1400646101 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479D126830D1400646101 /* ImageView.swift */; };
+		C74479D4268310D600646101 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479D3268310D600646101 /* ModalView.swift */; };
+		C74479D6268310FC00646101 /* GridImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74479D5268310FC00646101 /* GridImageView.swift */; };
 		C79B83F62681A3CE00E07839 /* cameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B83F52681A3CE00E07839 /* cameraApp.swift */; };
 		C79B83F82681A3CE00E07839 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B83F72681A3CE00E07839 /* ContentView.swift */; };
 		C79B83FA2681A3CF00E07839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B83F92681A3CF00E07839 /* Assets.xcassets */; };
 		C79B83FD2681A3CF00E07839 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B83FC2681A3CF00E07839 /* Preview Assets.xcassets */; };
+		C79B840D2681C6B100E07839 /* Imagepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B840C2681C6B100E07839 /* Imagepicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D58266D1DE7BF04699C282 /* Pods-camera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera.release.xcconfig"; path = "Target Support Files/Pods-camera/Pods-camera.release.xcconfig"; sourceTree = "<group>"; };
+		9B4EE3E2F17B81E53C4815E1 /* Pods_camera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74479C92682F1D200646101 /* UploaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploaderView.swift; sourceTree = "<group>"; };
+		C74479CB2682F20100646101 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		C74479CD2682F2A100646101 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C74479D126830D1400646101 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		C74479D3268310D600646101 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		C74479D5268310FC00646101 /* GridImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImageView.swift; sourceTree = "<group>"; };
 		C79B83F22681A3CE00E07839 /* camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B83F52681A3CE00E07839 /* cameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraApp.swift; sourceTree = "<group>"; };
 		C79B83F72681A3CE00E07839 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C79B83F92681A3CF00E07839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79B83FC2681A3CF00E07839 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C79B83FE2681A3CF00E07839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79B840C2681C6B100E07839 /* Imagepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagepicker.swift; sourceTree = "<group>"; };
+		F0D455B487765CAC3B5AB0A5 /* Pods-camera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera.debug.xcconfig"; path = "Target Support Files/Pods-camera/Pods-camera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8456FAFBCDCDB3C82431C30D /* Pods_camera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88491C85806CFF00599EFFAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0D455B487765CAC3B5AB0A5 /* Pods-camera.debug.xcconfig */,
+				79D58266D1DE7BF04699C282 /* Pods-camera.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE3B11B973DC976A05656E7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B4EE3E2F17B81E53C4815E1 /* Pods_camera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C79B83E92681A3CE00E07839 = {
 			isa = PBXGroup;
 			children = (
 				C79B83F42681A3CE00E07839 /* camera */,
 				C79B83F32681A3CE00E07839 /* Products */,
+				88491C85806CFF00599EFFAA /* Pods */,
+				AE3B11B973DC976A05656E7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +95,13 @@
 				C79B83F92681A3CF00E07839 /* Assets.xcassets */,
 				C79B83FE2681A3CF00E07839 /* Info.plist */,
 				C79B83FB2681A3CF00E07839 /* Preview Content */,
+				C79B840C2681C6B100E07839 /* Imagepicker.swift */,
+				C74479C92682F1D200646101 /* UploaderView.swift */,
+				C74479CB2682F20100646101 /* MemoView.swift */,
+				C74479CD2682F2A100646101 /* LoginView.swift */,
+				C74479D126830D1400646101 /* ImageView.swift */,
+				C74479D3268310D600646101 /* ModalView.swift */,
+				C74479D5268310FC00646101 /* GridImageView.swift */,
 			);
 			path = camera;
 			sourceTree = "<group>";
@@ -76,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C79B84012681A3CF00E07839 /* Build configuration list for PBXNativeTarget "camera" */;
 			buildPhases = (
+				B1DB65B948EB431E13C1040F /* [CP] Check Pods Manifest.lock */,
 				C79B83EE2681A3CE00E07839 /* Sources */,
 				C79B83EF2681A3CE00E07839 /* Frameworks */,
 				C79B83F02681A3CE00E07839 /* Resources */,
+				057F4300C77EBCFF2A920FED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +180,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		057F4300C77EBCFF2A920FED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-camera/Pods-camera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-camera/Pods-camera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-camera/Pods-camera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1DB65B948EB431E13C1040F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-camera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C79B83EE2681A3CE00E07839 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74479CE2682F2A100646101 /* LoginView.swift in Sources */,
+				C74479CC2682F20100646101 /* MemoView.swift in Sources */,
+				C74479D4268310D600646101 /* ModalView.swift in Sources */,
+				C74479CA2682F1D200646101 /* UploaderView.swift in Sources */,
+				C79B840D2681C6B100E07839 /* Imagepicker.swift in Sources */,
 				C79B83F82681A3CE00E07839 /* ContentView.swift in Sources */,
+				C74479D226830D1400646101 /* ImageView.swift in Sources */,
+				C74479D6268310FC00646101 /* GridImageView.swift in Sources */,
 				C79B83F62681A3CE00E07839 /* cameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +360,7 @@
 		};
 		C79B84022681A3CF00E07839 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D455B487765CAC3B5AB0A5 /* Pods-camera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +383,7 @@
 		};
 		C79B84032681A3CF00E07839 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D58266D1DE7BF04699C282 /* Pods-camera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
