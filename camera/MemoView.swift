@@ -51,9 +51,8 @@ struct MemoView: View {
                         return;
                     }
                 })
-                print("Upload")
             }, label: {
-                Text("Upload")
+                Text("アップロード")
             })
             .alert(isPresented: $uploaded, content: {
                 Alert(title: Text("アップロード完了"), message: Text("写真をアップロードしました"), dismissButton: .default(Text("閉じる"))

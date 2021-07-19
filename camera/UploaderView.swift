@@ -35,13 +35,13 @@ struct UploaderView: View {
                                                 self.source = .photoLibrary
                                                 self.isImagePicker.toggle()
                                             }, label: {
-                                                Text("Photo library")
+                                                Text("フォトライブラリ")
                                             })
                                             Button(action: {
                                                 self.source = .camera
                                                 self.isImagePicker.toggle()
                                             }, label: {
-                                                Text("Take Photo")
+                                                Text("写真を撮影")
                                             })
                                         }
                                         Button(action: {

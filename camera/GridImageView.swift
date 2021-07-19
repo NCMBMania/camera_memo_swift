@@ -9,7 +9,6 @@ import SwiftUI
 import NCMB
 
 struct GridImageView: View {
-    @State private var fileName: String = ""
     @State private var imageData: Data? = .init(capacity:0)
     @State var memo: NCMBObject? = nil
     @State private var isShowing = false
@@ -37,7 +36,6 @@ struct GridImageView: View {
 
     func loadImage() {
         if let fileName : String = self.memo?["fileName"] {
-            self.fileName = fileName
             let file : NCMBFile = NCMBFile(fileName: fileName)
             file.fetchInBackground(callback: { result in
                 switch result {
