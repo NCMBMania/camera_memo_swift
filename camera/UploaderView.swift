@@ -45,9 +45,7 @@ struct UploaderView: View {
                                             })
                                         }
                                         Button(action: {
-                                            NCMBUser.logOutInBackground(callback: { _ in
-                                                isLogin = false
-                                            })
+                                            // ログアウト処理を実装します
                                         }, label: {
                                             Text("ログアウト")
                                         })

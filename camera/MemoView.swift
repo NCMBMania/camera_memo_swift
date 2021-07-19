@@ -26,31 +26,7 @@ struct MemoView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(maxWidth: 280)
             Button(action: {
-                let fileName = "\(UUID()).jpg"
-                let file = NCMBFile(fileName: fileName)
-                var acl = NCMBACL.empty
-                let user = NCMBUser.currentUser
-                acl.put(key: user!.objectId!, readable: true, writable: true)
-                file.acl = acl
-                file.saveInBackground(data: self.imageData, callback: { result in
-                    switch result {
-                    case .success:
-                        let memo = NCMBObject(className: "Memo");
-                        memo["text"] = text
-                        memo["fileName"] = fileName
-                        memo.acl = acl
-                        memo.saveInBackground(callback: {_ in
-                            self.uploaded.toggle()
-                            self.text = ""
-                            DispatchQueue.main.async {
-                                UIApplication.shared.closeKeyboard()
-                            }
-                        })
-                    case let .failure(error):
-                        print("保存に失敗しました: \(error)")
-                        return;
-                    }
-                })
+                // アップロード処理を記述します
             }, label: {
                 Text("アップロード")
             })

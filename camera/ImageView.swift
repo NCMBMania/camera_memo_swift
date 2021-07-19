@@ -25,16 +25,8 @@ struct ImageView: View {
             }
         }
     }
+    // データストアからメモをダウンロードする関数
     func getAllPhotos() {
-        let query = NCMBQuery.getQuery(className: "Memo")
-        query.findInBackground(callback: { result in
-            switch result {
-                case let .success(array):
-                    self.memos = array
-                case let .failure(error):
-                    print("取得に失敗しました: \(error)")
-            }
-        })
     }
 }
 

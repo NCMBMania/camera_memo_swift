@@ -9,8 +9,11 @@ import SwiftUI
 import NCMB
 
 struct GridImageView: View {
+    // ファイルストアからダウンロードした写真データが入る
     @State private var imageData: Data? = .init(capacity:0)
+    // Memoクラスのインスタンス
     @State var memo: NCMBObject? = nil
+    // モーダル表示の制御用
     @State private var isShowing = false
     
     var body: some View {
@@ -27,25 +30,18 @@ struct GridImageView: View {
         }.onAppear() {
             loadImage()
         }.onTapGesture {
+            // タップしたらフラグを立てる
             isShowing = true
+        // フラグが立つと、この処理に流れる
         }.fullScreenCover(isPresented: $isShowing) {
+            // モーダルビューの呼び出し
             ModalView(isActive: $isShowing, memo: memo!, imageData: imageData!)
         }
         
     }
-
+    
+    // ファイルストアから写真をダウンロードする処理
     func loadImage() {
-        if let fileName : String = self.memo?["fileName"] {
-            let file : NCMBFile = NCMBFile(fileName: fileName)
-            file.fetchInBackground(callback: { result in
-                switch result {
-                    case let .success(data):
-                        self.imageData = data
-                    case let .failure(error):
-                        print(error)
-                }
-            })
-        }
     }
 }
 

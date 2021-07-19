@@ -28,15 +28,8 @@ struct LoginView: View {
             })
         }
     }
-
+    
+    // NCMBへのユーザ登録とログイン処理を行う関数
     func signUpOrLogin() {
-        let user = NCMBUser()
-        user.userName = userName
-        user.password = password
-        user.signUpInBackground(callback: { _ in
-            NCMBUser.logInInBackground(userName: userName, password: password, callback: { _ in
-                self.isLogin = NCMBUser.currentUser != nil
-            })
-        })
     }
 }

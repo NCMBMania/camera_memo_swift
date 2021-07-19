@@ -9,8 +9,11 @@ import SwiftUI
 import NCMB
 
 struct ModalView: View {
+    // モーダル表示中かどうかのフラグ（一覧から受け継ぎ）
     @Binding var isActive: Bool
+    // Memoクラスのインスタンス
     @State var memo: NCMBObject
+    // ファイルストアからダウンロードした写真データが入る
     @State var imageData: Data
     
     var body: some View {
@@ -25,6 +28,7 @@ struct ModalView: View {
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .clipped()
                 }
+                // Memoクラスに入れていたメッセージを受け取る
                 if let text: String = memo["text"] {
                     Text(text).padding()
                 }

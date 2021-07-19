@@ -19,6 +19,7 @@ struct cameraApp: App {
         .onChange(of: scenePhase) { scene in
             switch scene {
             case .active:
+                // NCMBの初期化処理です
                 NCMB.initialize(applicationKey: "YOUR_APPLICATION_KEY", clientKey: "YOUR_CLIENT_KEY")
             case .background:
                 print("background")
