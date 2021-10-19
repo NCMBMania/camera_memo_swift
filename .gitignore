@@ -2,3 +2,4 @@ Pods/
 Podfile.lock
 camera.xcworkspace/
 camera.xcodeproj/xcuserdata/nakatsugawa.xcuserdatad/xcschemes/xcschememanagement.plist
+.DS_Store
